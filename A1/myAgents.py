@@ -25,14 +25,85 @@ class TimidAgent(Agent):
         If the pacman is in danger we return the direction to the ghost.
         """
 
-        # Your code
-        raise NotImplemented
+        if(ghost.isScared() == False and (pacman.getPosition()[0] == ghost.getPosition()[0]) and (abs(pacman.getPosition()[1] - ghost.getPosition()[1]) <= dist) ):
+            if( (pacman.getPosition()[1] - ghost.getPosition()[1]) < 0 ):
+                print(Directions.NORTH)
+                return Directions.NORTH
+            if( (pacman.getPosition()[1] - ghost.getPosition()[1]) > 0 ):
+                print(Directions.SOUTH)
+                return Directions.SOUTH
+        
+        if(ghost.isScared() == False and (pacman.getPosition()[1] == ghost.getPosition()[1]) and (abs(pacman.getPosition()[0] - ghost.getPosition()[0]) <= dist) ):
+            if( (pacman.getPosition()[0] - ghost.getPosition()[0]) < 0 ):
+                print(Directions.EAST)
+                return Directions.EAST
+            if( (pacman.getPosition()[0] - ghost.getPosition()[0]) > 0 ):
+                print(Directions.WEST)
+                return Directions.WEST
+
+        else:
+            return Directions.STOP
+       
+        # raise NotImplemented
     
     def getAction(self, state):
         """
         state - GameState
+
+        When the pacman is not in danger, it should function similarly to the LeftTurnAgent. That is, it
+        turns left whenever possible. If not possible it runs until it can’t go any further in the current
+        direction, then tries a right turn or U-turn. If no action is possible, sets the action to
+        Directions.Stop.
+
+        Based on the direction from which the pacman is in danger, we
+        select a new direction. We check for legal directions in the following order: reversing the
+        current direction, turning to the left, then turning to the right. If none of these are legal, we
+        continue in the direction of the danger, or stop if no move is legal (only possible in contrived
+        boards)
         
         Fill in appropriate documentation
         """
+        # # List of directions the agent can choose from
+        legal = state.getLegalPacmanActions()
 
-        raise NotImplemented
+        # # Get the agent's state from the game state and find agent heading
+        agentState = state.getPacmanState()
+        ghostState = state.getGhostStates()
+
+        heading = agentState.getDirection()
+
+        if heading == Directions.STOP:
+            # Pacman is stopped, assume North (true at beginning of game)
+            heading = Directions.NORTH
+
+        for ghostState in state.getGhostStates():
+            dangerDirection = self.inDanger(agentState, ghostState)
+            
+        if(dangerDirection == Directions.STOP):
+            left = Directions.LEFT[heading]
+            if left in legal:
+                action = left
+            else:
+                if heading in legal:
+                    action = heading
+                elif Directions.RIGHT[heading] in legal:
+                    action = Directions.RIGHT[heading]
+                elif Directions.Reverse[heading] in legal:
+                    action = Directions.REVERSE[heading]
+                else:
+                    action = Directions.STOP
+
+        elif(dangerDirection != Directions.STOP):
+            reverse = Directions.REVERSE[heading]
+            if reverse in legal:
+                action = reverse
+            else:
+                if Directions.LEFT in legal:
+                    action = Directions.LEFT[heading]
+                elif Directions.RIGHT in legal:
+                    action = Directions.RIGHT[heading]
+                else:
+                    action = Directions.STOP
+
+        return action
+        # raise NotImplemented
