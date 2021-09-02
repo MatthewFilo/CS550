@@ -27,18 +27,14 @@ class TimidAgent(Agent):
 
         if(ghost.isScared() == False and (pacman.getPosition()[0] == ghost.getPosition()[0]) and (abs(pacman.getPosition()[1] - ghost.getPosition()[1]) <= dist) ):
             if( (pacman.getPosition()[1] - ghost.getPosition()[1]) < 0 ):
-                print(Directions.NORTH)
                 return Directions.NORTH
             if( (pacman.getPosition()[1] - ghost.getPosition()[1]) > 0 ):
-                print(Directions.SOUTH)
                 return Directions.SOUTH
         
         if(ghost.isScared() == False and (pacman.getPosition()[1] == ghost.getPosition()[1]) and (abs(pacman.getPosition()[0] - ghost.getPosition()[0]) <= dist) ):
             if( (pacman.getPosition()[0] - ghost.getPosition()[0]) < 0 ):
-                print(Directions.EAST)
                 return Directions.EAST
             if( (pacman.getPosition()[0] - ghost.getPosition()[0]) > 0 ):
-                print(Directions.WEST)
                 return Directions.WEST
 
         else:
@@ -76,9 +72,11 @@ class TimidAgent(Agent):
             # Pacman is stopped, assume North (true at beginning of game)
             heading = Directions.NORTH
 
+        # We cycle through ghoststate in order to input the ghosts one at a time for inDanger()
         for ghostState in state.getGhostStates():
             dangerDirection = self.inDanger(agentState, ghostState)
             
+        # This means that we are not in danger, so therefore we emulate LeftTurnAgent
         if(dangerDirection == Directions.STOP):
             left = Directions.LEFT[heading]
             if left in legal:
@@ -98,12 +96,11 @@ class TimidAgent(Agent):
             if reverse in legal:
                 action = reverse
             else:
-                if Directions.LEFT in legal:
+                if Directions.LEFT[heading] in legal:
                     action = Directions.LEFT[heading]
-                elif Directions.RIGHT in legal:
+                elif Directions.RIGHT[heading] in legal:
                     action = Directions.RIGHT[heading]
                 else:
                     action = Directions.STOP
 
         return action
-        # raise NotImplemented
