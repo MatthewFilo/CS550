@@ -1,0 +1,162 @@
+Running Trial #1
+Search: BreadthFirst Solved in 8.929673 Seconds
+Search: DepthFirst Solved in 15.276496 Seconds
+Search: Manhattan Solved in 0.120108 Seconds
+Trial #1 Completed!
+Running Trial #2   
+Search: BreadthFirst Solved in 8.911746 Seconds
+Search: DepthFirst Solved in 15.311578 Seconds
+Search: Manhattan Solved in 0.120109 Seconds
+Trial #2 Completed!
+Running Trial #3   
+Search: BreadthFirst Solved in 9.120052 Seconds
+Search: DepthFirst Solved in 15.394628 Seconds
+Search: Manhattan Solved in 0.117999 Seconds
+Trial #3 Completed!
+Running Trial #4   
+Search: BreadthFirst Solved in 8.77502 Seconds
+Search: DepthFirst Solved in 15.263753 Seconds
+Search: Manhattan Solved in 0.118613 Seconds
+Trial #4 Completed!
+Running Trial #5   
+Search: BreadthFirst Solved in 8.803651 Seconds
+Search: DepthFirst Solved in 15.165378 Seconds
+Search: Manhattan Solved in 0.11911 Seconds
+Trial #5 Completed!
+Running Trial #6   
+Search: BreadthFirst Solved in 8.743038 Seconds
+Search: DepthFirst Solved in 15.162029 Seconds
+Search: Manhattan Solved in 0.432028 Seconds
+Trial #6 Completed!
+Running Trial #7   
+Search: BreadthFirst Solved in 8.81058 Seconds
+Search: DepthFirst Solved in 15.215065 Seconds
+Search: Manhattan Solved in 0.118108 Seconds
+Trial #7 Completed!
+Running Trial #8   
+Search: BreadthFirst Solved in 8.917617 Seconds
+Search: DepthFirst Solved in 15.260023 Seconds
+Search: Manhattan Solved in 0.119112 Seconds
+Trial #8 Completed!
+Running Trial #9   
+Search: BreadthFirst Solved in 8.762483 Seconds
+Search: DepthFirst Solved in 15.251915 Seconds
+Search: Manhattan Solved in 0.118107 Seconds
+Trial #9 Completed!
+Running Trial #10  
+Search: BreadthFirst Solved in 8.760127 Seconds
+Search: DepthFirst Solved in 15.258961 Seconds
+Search: Manhattan Solved in 0.118018 Seconds
+Trial #10 Completed!
+Running Trial #11
+Search: BreadthFirst Solved in 8.754009 Seconds
+Search: DepthFirst Solved in 15.265467 Seconds
+Search: Manhattan Solved in 0.118751 Seconds
+Trial #11 Completed!
+Running Trial #12
+Search: BreadthFirst Solved in 8.784678 Seconds
+Search: DepthFirst Solved in 15.162004 Seconds
+Search: Manhattan Solved in 0.119098 Seconds
+Trial #12 Completed!
+Running Trial #13
+Search: BreadthFirst Solved in 8.710857 Seconds
+Search: DepthFirst Solved in 15.185593 Seconds
+Search: Manhattan Solved in 0.434395 Seconds
+Trial #13 Completed!
+Running Trial #14
+Search: BreadthFirst Solved in 8.803006 Seconds
+Search: DepthFirst Solved in 15.221103 Seconds
+Search: Manhattan Solved in 0.118832 Seconds
+Trial #14 Completed!
+Running Trial #15
+Search: BreadthFirst Solved in 8.885011 Seconds
+Search: DepthFirst Solved in 15.200065 Seconds
+Search: Manhattan Solved in 0.123143 Seconds
+Trial #15 Completed!
+Running Trial #16
+Search: BreadthFirst Solved in 8.735847 Seconds
+Search: DepthFirst Solved in 15.240068 Seconds
+Search: Manhattan Solved in 0.118015 Seconds
+Trial #16 Completed!
+Running Trial #17
+Search: BreadthFirst Solved in 8.726007 Seconds
+Search: DepthFirst Solved in 15.214005 Seconds
+Search: Manhattan Solved in 0.11902 Seconds
+Trial #17 Completed!
+Running Trial #18
+Search: BreadthFirst Solved in 8.732973 Seconds
+Search: DepthFirst Solved in 15.226766 Seconds
+Search: Manhattan Solved in 0.118108 Seconds
+Trial #18 Completed!
+Running Trial #19
+Search: BreadthFirst Solved in 8.768093 Seconds
+Search: DepthFirst Solved in 15.146623 Seconds
+Search: Manhattan Solved in 0.118295 Seconds
+Trial #19 Completed!
+Running Trial #20
+Search: BreadthFirst Solved in 8.697598 Seconds
+Search: DepthFirst Solved in 15.124681 Seconds
+Search: Manhattan Solved in 0.432394 Seconds
+Trial #20 Completed!
+Running Trial #21
+Search: BreadthFirst Solved in 8.782446 Seconds
+Search: DepthFirst Solved in 15.208325 Seconds
+Search: Manhattan Solved in 0.119107 Seconds
+Trial #21 Completed!
+Running Trial #22
+Search: BreadthFirst Solved in 8.893768 Seconds
+Search: DepthFirst Solved in 15.200777 Seconds
+Search: Manhattan Solved in 0.119108 Seconds
+Trial #22 Completed!
+Running Trial #23
+Search: BreadthFirst Solved in 8.733521 Seconds
+Search: DepthFirst Solved in 15.205256 Seconds
+Search: Manhattan Solved in 0.123116 Seconds
+Trial #23 Completed!
+Running Trial #24
+Search: BreadthFirst Solved in 8.738096 Seconds
+Search: DepthFirst Solved in 15.226876 Seconds
+Search: Manhattan Solved in 0.117108 Seconds
+Trial #24 Completed!
+Running Trial #25
+Search: BreadthFirst Solved in 8.74472 Seconds
+Search: DepthFirst Solved in 15.224152 Seconds
+Search: Manhattan Solved in 0.119107 Seconds
+Trial #25 Completed!
+Running Trial #26
+Search: BreadthFirst Solved in 8.835305 Seconds
+Search: DepthFirst Solved in 15.133327 Seconds
+Search: Manhattan Solved in 0.119109 Seconds
+Trial #26 Completed!
+Running Trial #27
+Search: BreadthFirst Solved in 8.704651 Seconds
+Search: DepthFirst Solved in 15.117497 Seconds
+Search: Manhattan Solved in 0.434395 Seconds
+Trial #27 Completed!
+Running Trial #28
+Search: BreadthFirst Solved in 8.77262 Seconds
+Search: DepthFirst Solved in 15.178811 Seconds
+Search: Manhattan Solved in 0.119109 Seconds
+Trial #28 Completed!
+Running Trial #29
+Search: BreadthFirst Solved in 8.88757 Seconds
+Search: DepthFirst Solved in 15.203826 Seconds
+Search: Manhattan Solved in 0.119012 Seconds
+Trial #29 Completed!
+Running Trial #30
+Search: BreadthFirst Solved in 8.724504 Seconds
+Search: DepthFirst Solved in 15.221815 Seconds
+Search: Manhattan Solved in 0.119108 Seconds
+Trial #30 Completed!
+Running Trial #31
+Search: BreadthFirst Solved in 8.733064 Seconds
+Search: DepthFirst Solved in 15.192411 Seconds
+Search: Manhattan Solved in 0.119108 Seconds
+Trial #31 Completed!
+
+Statistics of Searches (Given in Mean / Standard Deviation)
+
+Search Method Name               Time            Path Length             Number of Nodes
+Manhattan Search                 0.16/0.107      22/0.0          1531/0.0
+Depth First Search               15.215/0.057    66004/0.0               142566/0.0
+Breadth First Search             8.796/0.09      22/0.0          88440/0.0

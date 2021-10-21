@@ -11,7 +11,7 @@ class Explored(object):
     def __init__(self):
         "__init__() - Create an empty explored set"
         
-        raise NotImplemented
+        self.hash_map = dict()
 
     def exists(self, state):
         """
@@ -21,7 +21,11 @@ class Explored(object):
         :return: True if already seen, False otherwise4
         """
 
-        raise NotImplemented
+        # We return the state and if an error occurs, we return False
+        try:
+            return state in self.hash_map[hash(state)]
+        except:
+            return False
 
 
     def add(self, state):
@@ -32,6 +36,10 @@ class Explored(object):
         :return: None
         """
 
-        raise NotImplemented
+        if hash(state) not in self.hash_map.keys(): # If the state is not in the set of keys, create a set
+            self.hash_map[hash(state)] = set()
+        self.hash_map[hash(state)].add(state) # Add the state to the map
+        return None
+
 
 

@@ -1,5 +1,3 @@
-
-
 from basicsearch_lib02.tileboard import TileBoard
 from basicsearch_lib02.searchrep import Problem
 
@@ -26,23 +24,19 @@ class NPuzzle(Problem):
         # dictionary, e.g. kwargs[“keyname”], or passed to another function 
         # as if each entry was a keyword argument:
         #    e.g. foobar(arg1, arg2, …, argn, **kwargs).
-
-        raise NotImplemented
+        super().__init__(TileBoard(n, force_state=force_state), goals = None, **kwargs)
         
     def actions(self, state):
         "actions(state) - find a set of actions applicable to specified state"
-
-        raise NotImplemented
+        return state.get_actions()
     
     def result(self, state, action):
         "result(state, action)- apply action to state and return new state"
-
-        raise NotImplemented
+        return state.move(action)
     
     def goal_test(self, state):
         "goal_test(state) - Is state a goal?"
-
-        raise NotImplemented
+        return state.solved()
 
     
         
